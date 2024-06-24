@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- Start/Analytical question start -->
+<category>
+    <pattern>CAREERHELPER</pattern>
+    <template>Welcome to the career helper. We will now run through some questions:
+              Do you consider yourself analytical?
+<button>
+    <text>Yes</text>
+    <postback>YesAnalytical</postback>
+</button>
+<button>
+    <text>No</text>
+    <postback>NoAnalytical</postback>
+</button>
+</template>
+</category>
+
+<!-- Analytical Yes postback tree -->
+
+<category>
+    <pattern>YesAnalytical</pattern>
+    <template>Do you like the idea of large data sets?
+        <button>
+            <text>Yes</text>
+            <postback>YesData</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>NoData</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>YesData</pattern>
+    <template>After answering those questions, I think that you should look for
+    a career as a Data Scientist! Here is a link to an article that will help you
+    further understand this career!
+    <link>
+        <text>Data Scientist</text>
+        <url>https://www.coursera.org/articles/what-is-a-data-scientist</url>
+    </link>
+    </template>
+</category>
+
+<category>
+    <pattern>NoData</pattern>
+    <template>After answering those questions, I think that you should look for
+    a career as an Embedded Software Engineer! Here is a link to an article that will help you
+    further understand this career!
+    <link>
+        <text>Embedded Software Engineer</text>
+        <url>https://www.hcltech.com/knowledge-library/what-is-embedded-software-engineering</url>
+    </link>
+    </template>
+</category>
+
+
+
+<!-- Analytical No Postback tree -->
+<category>
+    <pattern>NoAnalytical</pattern>
+    <template>Do you consider yourself creative?
+        <button>
+            <text>Yes</text>
+            <postback>YesCREATIVE</postback>
+        </button>
+        <button>
+            <text>No</text>
+            <postback>NoCREATIVE</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>YesCREATIVE</pattern>
+    <template>After answering those questions, I think that you should look for
+    a career as a Front-End Developer! Here is a link to an article that will help you
+    further understand this career!
+    <link>
+        <text>Front-End Developer</text>
+        <url>https://www.coursera.org/articles/front-end-developer</url>
+    </link>
+    </template>
+</category>
+
+<!-- Creative No Postback Tree -->
+<category>
+    <pattern>NoCREATIVE</pattern>
+    <template>Do you like working with Servers?
+    <button>
+        <text>Yes</text>
+        <postback>YesSERVERS</postback>
+    </button>
+    <button>
+        <text>No</text>
+        <postback>NoSERVERS</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>YesSERVERS</pattern>
+    <template>After answering those questions, I think that you should look for
+    a career as a Back-End Developer! Here is a link to an article that will help you
+    further understand this career!
+    <link>
+        <text>Back-End Developer</text>
+        <url>https://www.coursera.org/articles/back-end-developer</url>
+    </link>
+    </template>
+</category>
+
+<!-- Servers No Postback Tree -->
+<category>
+    <pattern>NoSERVERS</pattern>
+    <template>Do you like working with or on teams?
+    <button>
+        <text>Yes</text>
+        <postback>YesTEAMS</postback>
+    </button>
+    <button>
+        <text>No</text>
+        <postback>NoTEAMS</postback>
+    </button>
+    </template>
+</category>
+<category>
+    <pattern>YesTEAMS</pattern>
+    <template>After answering those questions, I think that you should look for
+    a career as a Project Manager! Here is a link to an article that will help you
+    further understand this career!
+    <link>
+        <text>Project Manager</text>
+        <url>https://www.coursera.org/articles/what-is-project-manager</url>
+    </link>
+    </template>
+</category>
+<category>
+    <pattern>NoTEAMS</pattern>
+    <template>After answering those questions, I think that you should look for
+    a career as a Freelancer! Here is a link to an article that will help you
+    further understand this career!
+    <link>
+        <text>Freelance Software Developer</text>
+        <url>https://www.indeed.com/career-advice/finding-a-job/how-to-become-freelancer-for-software-development</url>
+    </link>
+    </template>
+</category>
+
+</aiml>

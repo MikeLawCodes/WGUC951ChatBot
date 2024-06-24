@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>HI</pattern>
+    <template>Hello! Welcome to the WGU Career Help Bot! Would you like to:
+    <button>
+        <text>Start Career Helper</text>
+        <postback>CAREERHELPER</postback>
+    </button>
+    <button>
+        <text>View Career Options</text>
+        <postback>CAREERLIST</postback>
+    </button>
+    </template>
+  </category>
+  <category>
+    <pattern>StartAgain</pattern>
+    <template>Hello! Welcome to the WGU Career Help Bot! Would you like to:
+    <button>
+        <text>Start Career Helper</text>
+        <postback>CAREERHELPER</postback>
+    </button>
+    <button>
+        <text>View Career Options</text>
+        <postback>CAREERLIST</postback>
+    </button>
+    </template>
+  </category>
+<category>
+    <pattern>CAREERLIST</pattern>
+    <template>
+        <ul>
+            <li>
+                <link>
+                    <text>Front-End Developer</text>
+                    <url>https://www.coursera.org/articles/front-end-developer</url>
+                </link>
+                </li>
+            <li>
+            <link>
+                <text>Back-End Developer</text>
+                <url>https://www.coursera.org/articles/back-end-developer</url>
+            </link>
+            </li>
+            <li>
+            <link>
+                <text>Project Manager</text>
+                <url>https://www.coursera.org/articles/what-is-project-manager</url>
+            </link>
+            </li>
+            <li>
+                <link>
+                    <text>Data Scientist</text>
+                    <url>https://www.coursera.org/articles/what-is-a-data-scientist</url>
+                </link>
+            </li>
+            <li>
+                <link>
+                    <text>Embedded Software Engineer</text>
+                    <url>https://www.hcltech.com/knowledge-library/what-is-embedded-software-engineering</url>
+                </link></li>
+            <li>
+                <link>
+                    <text>Freelance Software Developer</text>
+                    <url>https://www.indeed.com/career-advice/finding-a-job/how-to-become-freelancer-for-software-development</url>
+                </link></li>
+        </ul>
+    </template>
+</category>
+
+</aiml>
